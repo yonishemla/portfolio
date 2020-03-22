@@ -11,7 +11,7 @@
     --fw-reg: 300;
     --fw-bold: 900;
 
-    --clr-light: #fff;
+    --clr-light: rgb(204, 204, 204);
     --clr-dark: #303030;
     --clr-accent: rgb(51, 179, 162);
 
@@ -37,6 +37,43 @@
 html{
     scroll-behavior: smooth;
 }
+
+img {
+    background-color:  var(--clr-light);
+    animation-name: example1;
+    animation-duration: 7s;
+    animation-iteration-count: 1000;
+  }
+
+  @keyframes example1 {
+    0%   {background-color: var(--clr-light);}
+    25%  {background-color: var(--clr-dark);}
+    50%  {background-color: var(--clr-accent);}
+    100% {background-color: var(--clr-light);}
+  }
+
+  @keyframes example3 {
+    0%   {background-color: var(--clr-light);}
+    25%  {background-color: var(--clr-accent);}
+    50%  {background-color: var(--clr-accent);}
+    100% {background-color: var(--clr-light);}
+  }
+
+
+  body {
+    background-color:  var(--clr-light);
+    animation-name: example2;
+    animation-duration: 7s;
+    animation-iteration-count: 1000;
+  }
+
+  @keyframes example2 {
+    0%   {background-color: var(--clr-accent);}
+    25%  {background-color: var(--clr-light);}
+    50%  {background-color: var(--clr-light);}
+    100% {background-color: var(--clr-accent);}
+  }
+  
 
 
 body{
@@ -112,6 +149,9 @@ margin-bottom:  .25em;
 .section__subtitle--intro{
     font-weight: var(--fw-reg);
     display: inline-block;
+    animation-name: example3;
+    animation-duration: 7s;
+    animation-iteration-count: 1000;
 }
 
 .section__subtitle{
@@ -231,6 +271,9 @@ text-decoration: none;
 .hamburger::before,
 .hamburger::after{
     background: var(--clr-accent);
+    animation-name: example1;
+    animation-duration: 7s;
+    animation-iteration-count: 1000;
     width: 2em;
     height: 3px;
     border-radius: 1em;
@@ -366,6 +409,9 @@ text-decoration: none;
     "subtitle img"
     "text img";
     grid-column-gap: 1em;
+    background-color: var(--clr-light);
+    color: var(--clr-dark);
+    text-align: center;
 }
 
 .section__subtitle--about{
@@ -399,18 +445,25 @@ position: relative;
 }
 
 .portfolio{
-    display: grid;
+    /* display: grid; */
     grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
     max-width: 0 auto;
     margin: 0 auto;
+    text-align: center;
 }
 
 .portfolio__item{
-    margin: auto;
+    /* margin: auto; */
     background: var(--clr-accent);
-    margin-left: 0;
-    margin-right: 0;
+    /* margin-left: 0;
+    margin-right: 0; */
+    margin-top: 1em;
     overflow: hidden;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+
 }
 
 .portfolio__img{
