@@ -386,7 +386,7 @@ text-decoration: none;
 
 .about-me__img{
     box-shadow: var(--bs);
-    min-width: 250px;
+    min-width: 200px;
  
 }
 
