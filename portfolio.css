@@ -453,10 +453,7 @@ position: relative;
 }
 
 .portfolio__item{
-    /* margin: auto; */
     background: var(--clr-dark);
-    /* margin-left: 0;
-    margin-right: 0; */
     margin-top: 1em;
     overflow: hidden;
     display: block;
@@ -465,8 +462,6 @@ position: relative;
     width: 65%;
     box-shadow: var(--bs);
     min-width: 250px;
-
-
 }
 
 .portfolio__img{
